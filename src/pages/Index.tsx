@@ -3,10 +3,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Process from '../components/Process';
 import Expertise from '../components/Expertise';
-import Team from '../components/Team';
-import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
-import LatestPosts from '../components/LatestPosts';
 
 const Index = () => {
   return (
@@ -14,10 +11,7 @@ const Index = () => {
       <Hero />
       <Process />
       <Expertise />
-      <Team />
-      <Testimonials />
       <Contact />
-      <LatestPosts />
     </div>
   );
 };
