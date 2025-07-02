@@ -56,11 +56,11 @@ const Hero = () => {
               <p className="text-sm text-slate-500 mb-6 font-medium">Trusted by industry leaders worldwide</p>
               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900 mb-1">500+</div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">5+</div>
                   <div className="text-sm text-slate-600">Happy Clients</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900 mb-1">95%</div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">99%</div>
                   <div className="text-sm text-slate-600">Success Rate</div>
                 </div>
                 <div className="text-center">
