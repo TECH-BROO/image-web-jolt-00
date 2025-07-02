@@ -1,9 +1,16 @@
 
 import React from 'react';
-import { ArrowRight, Play, Star, Users, Award } from 'lucide-react';
+import { ArrowRight, Star, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const scrollToContact = () => {
+    const element = document.querySelector('#contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
       {/* Enhanced background elements */}
@@ -33,16 +40,14 @@ const Hero = () => {
               We deliver cutting-edge solutions and data-driven insights that accelerate your business growth and maximize ROI through innovative strategies.
             </p>
             
-            {/* Enhanced buttons */}
+            {/* Enhanced button */}
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <Button 
+                onClick={scrollToContact}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+              >
                 <span>Start Your Journey</span>
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              
-              <Button variant="outline" className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-50 hover:border-slate-400 transition-all duration-300 backdrop-blur-sm">
-                <Play className="w-5 h-5 mr-2" />
-                <span>Watch Demo</span>
               </Button>
             </div>
             
