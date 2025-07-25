@@ -96,13 +96,13 @@ const Expertise = () => {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gradient-to-b from-slate-800 to-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Expertise</span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Our <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Expertise</span>
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             We deliver comprehensive digital solutions that drive real business results
           </p>
         </div>
@@ -112,24 +112,24 @@ const Expertise = () => {
             const colorClasses = getColorClasses(area.color);
             return (
               <div key={index} className="group relative">
-                <div className={`${colorClasses.bg} ${colorClasses.border} border-2 rounded-2xl p-8 transition-all duration-300 ${colorClasses.hover} hover:shadow-lg hover:-translate-y-1`}>
+                <div className={`bg-slate-800/50 backdrop-blur-sm ${colorClasses.border} border-2 rounded-2xl p-8 transition-all duration-300 hover:bg-slate-700/50 hover:shadow-lg hover:-translate-y-1`}>
                   {/* Icon */}
                   <div className={`${colorClasses.icon} w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
                     <area.icon className="w-7 h-7 text-white" />
                   </div>
                   
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-white mb-3">
                     {area.title}
                   </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
+                  <p className="text-slate-300 mb-6 leading-relaxed">
                     {area.description}
                   </p>
                   
                   {/* Features */}
                   <ul className="space-y-2 mb-6">
                     {area.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-slate-700">
+                      <li key={idx} className="flex items-center text-sm text-slate-300">
                         <CheckCircle className={`w-4 h-4 ${colorClasses.text} mr-2 flex-shrink-0`} />
                         {feature}
                       </li>
